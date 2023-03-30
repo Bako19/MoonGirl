@@ -1,0 +1,402 @@
+/* .artical {
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(3rem);
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+} */
+
+.Home {
+    background: url(../images/OpeningPage.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+}
+
+.button1 {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: -7%;
+}
+
+.menuVideo {
+    background: url(../images/Background\ for\ Still\ animation.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.button2 {
+    transform: translate(-50%, -50%);
+    left: 51%;
+    bottom: 10%;
+    width: 23%;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-30px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.vidDiv {
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50%;
+
+}
+
+.vid {
+    animation: float 6s ease-in-out infinite;
+    top: 50%;
+}
+
+.dateBanner {
+    bottom: 5%;
+}
+
+.seams {
+    bottom:0%;
+    transform: translate(0%, 25%);
+}
+
+.menuList{
+    background: url(../images/1.\ Background\ Wallpaper\ -\ for\ loop.png);
+    background-size: 100vw;
+}
+
+/* section{
+    scroll-snap-align: start;
+} */
+
+.menuItems{
+    width: 17.5vw;
+}
+
+.menuList2{
+    background: url(../images/1.\ Menu\ BG\ Rip\ wall\ texture.png);
+    background-size: 100% 100%;
+    padding-top: 210px;
+    padding-bottom: 100px;
+}
+
+.moongirlAndStar{
+    transform: translateY(-28%);
+}
+
+.text2{
+    transform: translateY(-15%);
+}
+
+.nightBeings{
+    background: url(../images/Background\ Night\ Beings.png);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 2000px) {
+    .button4 {
+        top: 3vh;
+        left: 3%;
+        width: 100px;
+    }
+    
+    .button3 {
+        bottom: 5vh;
+        right: 3%;
+    }
+    
+    .button5 {
+        transform: translate(-50%, 30%);
+        bottom: 0%;
+        left: 50%;
+        z-index: 300;
+    }
+
+    .toyMan{
+        transform: translate(-10%, -87%);
+        width: 300px;
+        
+    }
+
+}
+@media only screen and (min-width: 1500px) {
+    .button4 {
+        top: 3vh;
+        left: 3%;
+        width: 100px;
+    }
+    
+    .button3 {
+        bottom: 5vh;
+        right: 3%;
+    }
+    
+    .button5 {
+        transform: translate(-50%, 30%);
+        bottom: 0%;
+        left: 50%;
+        width: 200px;
+        z-index: 300;
+    }
+
+    .toyMan{
+        transform: translate(0%, -87%);
+        width: 200px;
+        
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .button3 {
+        bottom: 5vh;
+        right: 3%;
+    }
+
+    .sochialDiv{
+        position: absolute;
+        bottom: 3%;
+        left: 3%;
+    }
+
+    .sochial{
+        width: 150px;
+    }
+    
+    .menuList2{
+        padding-top: 210px;
+    }
+
+    .button4 {
+        top: 3vh;
+        left: 3%;
+        width: 80px;
+    }
+    
+    .button5 {
+        transform: translate(-50%, 30%);
+        bottom: 0%;
+        left: 50%;
+        width: 200px;
+        z-index: 300;
+    }
+
+    .toyMan{
+        transform: translate(0%, -87%);
+        width: 200px;
+        
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .button3 {
+        bottom: 7vh;
+        right: 3%;
+        width: 100px;
+    }
+
+    .sochialDiv{
+        position: absolute;
+        bottom: 3%;
+        left: 3%;
+    }
+
+    .sochial{
+        width: 80px;
+    }
+    
+    .menuList2{
+        padding-top: 110px;
+    }
+    
+    .button4 {
+        top: 3vh;
+        left: 3%;
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .button3 {
+        bottom: 6vh;
+        right: 3%;
+    }
+    
+    .menuList2{
+        padding-top: 100px;
+    }
+    
+    .button4 {
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .button3 {
+        bottom: 90vh;
+    }
+
+    .sochialDiv{
+        position: absolute;
+        top: 2%;
+        left: 3%;
+    }
+
+    .sochial{
+        width: 80px;
+    }
+    
+    .menuList2{
+        padding-top: 100px;
+    }
+    
+    .button4 {
+        width: 60px;
+        top: 2vh;
+        left: 1%;
+    }
+    
+    .button5 {
+        transform: translate(-50%, 30%);
+        bottom: 0%;
+        left: 50%;
+        width: 130px;
+        z-index: 300;
+    }
+
+    .toyMan{
+        transform: translate(0%, -87%);
+        width: 130px;
+        
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .button3 {
+        top: 30px;
+        width: 80px;
+    }
+
+    .sochialDiv{
+        position: absolute;
+        top: 4%;
+        left: 3%;
+    }
+    .sochial{
+        width: 60px;
+    }
+    
+    .menuList2{
+        padding-top: 90px;
+    }
+    
+    .button4 {
+        width: 45px;
+    }
+    
+    .button5 {
+        transform: translate(-50%, 30%);
+        bottom: 0%;
+        left: 50%;
+        width: 100px;
+        z-index: 300;
+    }
+
+    .toyMan{
+        transform: translate(0%, -87%);
+        width: 100px;
+        
+    }
+}
+
+
+
+
+/* 
+
+.MoonGirlSec {
+    background-image: url(../images/ShineYourLightBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.MoonGirl {
+    transform: translate(0%, -50%);
+    top: 45%;
+}
+
+.mintBtn {
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%
+}
+
+.mintDate {
+    bottom: 3%;
+}
+
+.soundBtn {
+    bottom: 3%;
+    right: 3%;
+}
+
+.instaBtn {
+    bottom: 18%;
+    left: 3%;
+}
+
+.twitterBtn {
+    bottom: 5%;
+    left: 3%;
+}
+
+.Menu {
+    background: url(../images/Background\ without\ Seams.png);
+    background-size: 100% 100%;
+}
+
+.menuItems {
+    margin-top: 200px;
+}
+
+.menuItem {
+    min-height: 40vh;
+}
+
+.lable {
+    width: 60%;
+    position: absolute;
+    bottom: 0%;
+}
+
+.MenuBtn {
+    width: 70%;
+}
+
+.MenuBtn2 {
+    transform: translate(0%, 30%);
+} */
