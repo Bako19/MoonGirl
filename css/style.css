@@ -100,7 +100,23 @@
 .nightBeings{
     background: url(../images/Background\ Night\ Beings.png);
     background-size: cover;
-    min-height: 100vh;
+}
+
+.nightBeings2{
+    background: url(../images/1.\ Background\ Wallpaper\ -\ for\ loop.png);
+    background-size: 100vw;
+}
+
+.seams2 {
+    transform: translate(0%, -23%);
+}
+
+
+
+
+
+.swiper-pagination-bullet {
+    background-color: white !important;
 }
 
 
@@ -130,7 +146,7 @@
     }
     
     .button5 {
-        transform: translate(-50%, 30%);
+        /* transform: translate(-50%, 30%); */
         bottom: 0%;
         left: 50%;
         z-index: 300;
@@ -156,7 +172,7 @@
     }
     
     .button5 {
-        transform: translate(-50%, 30%);
+        /* transform: translate(-50%, 30%); */
         bottom: 0%;
         left: 50%;
         width: 200px;
@@ -196,7 +212,7 @@
     }
     
     .button5 {
-        transform: translate(-50%, 30%);
+        /* transform: translate(-50%, 30%); */
         bottom: 0%;
         left: 50%;
         width: 200px;
@@ -279,7 +295,7 @@
     }
     
     .button5 {
-        transform: translate(-50%, 30%);
+        /* transform: translate(-50%, 30%); */
         bottom: 0%;
         left: 50%;
         width: 130px;
@@ -317,7 +333,7 @@
     }
     
     .button5 {
-        transform: translate(-50%, 30%);
+        /* transform: translate(-50%, 30%); */
         bottom: 0%;
         left: 50%;
         width: 100px;
