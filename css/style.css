@@ -111,6 +111,17 @@
     transform: translate(0%, -23%);
 }
 
+.family1{
+    background: url(../images/Background\ without\ seams.png);
+    background-size: 100% 100%;
+    
+}
+
+.family2{
+    background: url(../images/Background2\ without\ seams.png);
+    background-size: 100% 100%;
+}
+
 
 
 
