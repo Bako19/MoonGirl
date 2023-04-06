@@ -12,7 +12,7 @@
 //     items[i].style.minHeight = gra(20,30) + 'vh';
 //     items[i].style.background = randomColor({luminosity: 'light'});
 //   }
-  
+
 //   cssScrollSnapPolyfill()
 // }
 // init();
@@ -25,7 +25,7 @@ var swiper = new Swiper(".mySwiper", {
     draggable: true,
     slidesPerView: 1.25,
     initialSlide: 1,
-    loop:false,
+    loop: false,
     breakpoints: {
         // when window width is >= 320px
         320: {
@@ -155,30 +155,37 @@ $('#poster23').click(swiper, function () {
     swiper.slideTo(22);
 })
 
-// swiper.on('slideChange', function (index) {
-//     switch (index.realIndex) {
-//         case 0:
-//             document.getElementById("youtube-iframe").src =
-//                 "https://www.youtube.com/embed/RDPGtbPiovU?autoplay=1"
-//             break;
-//         case 1:
-//             document.getElementById("youtube-iframe").src =
-//                 "https://www.youtube.com/embed/nhpgTZn7Dx4?autoplay=1"
-//             break;
-//         case 2:
-//             document.getElementById("youtube-iframe").src =
-//                 "https://www.youtube.com/embed/CNn7wvrMc2g?autoplay=1"
-//             break;
-//         case 3:
-//             document.getElementById("youtube-iframe").src =
-//                 "https://www.youtube.com/embed/jCXT4jb_4zQ?autoplay=1"
-//             break;
-//         case 4:
-//             document.getElementById("youtube-iframe").src =
-//                 "https://www.youtube.com/embed/uv5q6DDTjP4?autoplay=1"
-//             break;
-//         default:
-//             break;
-//     }
 
-// });
+addEventListener("load", m())
+
+function m() {
+    if (localStorage.muted == true) {
+        document.getElementById("myAudio").muted = true;
+        document.getElementById("soundOFF").classList.add("d-none");
+        document.getElementById("soundOFF").classList.remove("d-block");
+        document.getElementById("soundON").classList.add("d-block");
+        document.getElementById("soundON").classList.remove("d-none");
+        console.log("done")
+    }
+}
+
+
+
+
+function soundOFF() {
+    document.getElementById("myAudio").muted = true;
+    document.getElementById("soundOFF").classList.add("d-none");
+    document.getElementById("soundOFF").classList.remove("d-block");
+    document.getElementById("soundON").classList.add("d-block");
+    document.getElementById("soundON").classList.remove("d-none");
+    localStorage.setItem("muted", true);
+}
+
+function soundON() {
+    document.getElementById("myAudio").muted = false;
+    document.getElementById("soundON").classList.add("d-none");
+    document.getElementById("soundON").classList.remove("d-block");
+    document.getElementById("soundOFF").classList.add("d-block");
+    document.getElementById("soundOFF").classList.remove("d-none");
+    localStorage.setItem("muted", false);
+}
