@@ -9,7 +9,7 @@
 
 .Home {
     background: url(../images/OpeningPage.png);
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: right;
 }
@@ -78,13 +78,11 @@
     scroll-snap-align: start;
 } */
 
-.menuItems {
-    width: 17.5vw;
-}
+
 
 .menuList2 {
     background: url(../images/1.\ Menu\ BG\ Rip\ wall\ texture.png);
-    background-size: 100% 100%;
+    background-size: cover;
     padding-top: 210px;
     padding-bottom: 100px;
 }
@@ -186,6 +184,20 @@
     z-index: 10000000000;
 }
 
+.FAQQuestions{
+    width: 55%;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 25%;
+}
+
+.Answer{
+    z-index: 1000;
+    width: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
 
 
 
@@ -227,7 +239,6 @@ header video {
 
 header .container {
     transform: translate(-50%, -50%);
-    top: 50%;
     left: 50%;
     z-index: 2;
 }
@@ -244,7 +255,16 @@ header .overlay {
 
 .boatVideo {
     width: 200%;
+    max-height: 100vh;
 
+}
+
+.boatSec {
+    position: absolute;
+    /* transform: translateY(-50%); */
+    top: 50%;
+    width: 100%;
+    animation: float 6s ease-in-out infinite;
 }
 
 
@@ -260,6 +280,9 @@ header .overlay {
 
 
 
+.sochial {
+    width: 100px;
+}
 
 
 
@@ -305,6 +328,12 @@ header .overlay {
 
     }
 
+    .menuBtn {
+        right: 3%;
+        top: 3%;
+        width: 250px;
+    }
+
 }
 
 @media only screen and (min-width: 1500px) {
@@ -342,6 +371,12 @@ header .overlay {
         width: 200px;
 
     }
+
+    .menuBtn {
+        right: 3%;
+        top: 3%;
+        width: 250px;
+    }
 }
 
 @media only screen and (max-width: 1500px) {
@@ -350,7 +385,7 @@ header .overlay {
         top: 5%;
         left: 3%;
         z-index: 10000000000;
-        width: 80px;
+        width: 100px;
     }
 
     .sound {
@@ -358,8 +393,9 @@ header .overlay {
         bottom: 5%;
         right: 3%;
         z-index: 10000000000;
-        width:90px;
+        width: 110px;
     }
+
     .button3 {
         bottom: 5vh;
         right: 3%;
@@ -367,7 +403,7 @@ header .overlay {
 
     .sochialDiv {
         position: absolute;
-        bottom: 3%;
+        top: 3%;
         left: 3%;
     }
 
@@ -392,6 +428,21 @@ header .overlay {
         width: 200px;
 
     }
+
+    .menuBtn {
+        right: 3%;
+        top: 3%;
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .sochial {
+        width: 80px;
+    }
+
+
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -403,7 +454,7 @@ header .overlay {
 
     .sochialDiv {
         position: absolute;
-        bottom: 3%;
+        top: 3%;
         left: 3%;
     }
 
@@ -412,7 +463,8 @@ header .overlay {
     }
 
     .menuList2 {
-        padding-top: 110px;
+        padding-top: 50px;
+        padding-bottom: 0px;
     }
 }
 
@@ -423,7 +475,7 @@ header .overlay {
     }
 
     .menuList2 {
-        padding-top: 100px;
+        padding-top: 50px;
     }
 }
 
@@ -433,7 +485,7 @@ header .overlay {
         top: 5%;
         left: 3%;
         z-index: 10000000000;
-        width: 60px;
+        width: 85px;
     }
 
     .sound {
@@ -441,8 +493,9 @@ header .overlay {
         bottom: 5%;
         right: 3%;
         z-index: 10000000000;
-        width: 70px;
+        width: 100px;
     }
+
     .button3 {
         bottom: 90vh;
     }
@@ -458,7 +511,7 @@ header .overlay {
     }
 
     .menuList2 {
-        padding-top: 100px;
+        padding-top: 10px;
     }
 
     .button5 {
@@ -474,6 +527,12 @@ header .overlay {
         width: 130px;
 
     }
+
+    .menuBtn {
+        right: 5%;
+        top: 5%;
+        width: 200px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -482,7 +541,7 @@ header .overlay {
         top: 5%;
         left: 3%;
         z-index: 10000000000;
-        width: 40px;
+        width: 65px;
     }
 
     .sound {
@@ -490,8 +549,9 @@ header .overlay {
         bottom: 5%;
         right: 3%;
         z-index: 10000000000;
-        width: 50px;
+        width: 75px;
     }
+
     .button3 {
         top: 30px;
         width: 80px;
@@ -508,7 +568,7 @@ header .overlay {
     }
 
     .menuList2 {
-        padding-top: 90px;
+        padding-top: 10px;
     }
 
     .button5 {
@@ -524,4 +584,34 @@ header .overlay {
         width: 100px;
 
     }
+
+    .menuBtn {
+        right: 5%;
+        top: 5%;
+        width: 150px;
+    }
+}
+
+/* This used to work for the parent element of button divs */
+/* But it does not work with newer browsers, the below doesn't hide the play button parent div */
+
+*::-webkit-media-controls-panel {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works! */
+
+*::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
 }

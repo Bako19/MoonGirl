@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="icon" href="./images/Icon.png" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <button id="soundOFFButton" onclick="turnOn()" class="border-0 bg-transparent sound"><img class="w-100" src="./images/Sound Button.png " alt="" /></button>
+    <button id="soundONButton" onclick="turnOff()" class="border-0 bg-transparent sound"><img class="w-100" src="./images/Sound MUTE button.png" alt="" /></button>
+
+    <section id="home" class="menuPage">
+      <div class="menuVideo position-relative">
+        <a href="#menu" class="position-absolute menuBtn"> <img class="w-100" src="./images/Menu New with Press.png" alt="" /></a>
+        <img class="seams position-absolute w-100" src="./images/Seams.png" alt="" />
+        <div class="row justify-content-center">
+          <div style="overflow-x: hidden" class="vidDiv col-12 col-md-7 col-xxl-5">
+            <div class="vid position-relative">
+              <video style="width: 150%; transform: translateX(-16%)" id="player" src="./images/1.webm" type="video/webm;" codecs="vp8, vorbis" muted loop autoplay playsinline></video>
+              <a class="bg-transparent border-0 button2 position-absolute" target="_blank" href="https://opensea.io/collection/moongirlxyz"
+                ><img class="w-100" src="./images/Mint Button.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="dateBanner col-12 col-md-9 col-xl-7 col-xxl-5 position-absolute">
+            <img class="w-100" src="./images/Mint Date Banner.png" alt="" />
+          </div>
+        </div>
+        <div class="sochialDiv">
+          <a target="_blank" href="https://www.instagram.com/moongirlxyz/"><img class="sochial m-2 m-lg-2 m-xxl-4" src="./images/Insta.png" alt="" /></a> <br class="" />
+          <a target="_blank" href="https://twitter.com/Moongirlxyz"><img class="sochial m-2 m-lg-2 m-xxl-4" src="./images/Twitter.png" alt="" /></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menuList position-relative">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-9 col-md-8 col-lg-7 col-xl-6 col-xxl-4">
+            <img class="w-100" src="./images/Menu Banner.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="menuList2 w-100">
+        <div class="d-md-none">
+          <div class="row justify-content-center m-0">
+            <div class="col-8 col-sm-4 col-md text-center">
+              <a href="./story.html"><img class="w-100" src="./images/About Moongirl button and L1abel.png" alt="" /></a>
+            </div>
+            <div class="col-6 col-sm-4 col-md text-center">
+              <a href="./nightBeings.html"><img class="w-100" src="./images/Night Beings Button and Label.png" alt="" /></a>
+            </div>
+            <div class="col-6 col-sm-4 col-md text-center">
+              <a href="./families.html"><img class="w-100" src="./images/Conflicting Families button and Label.png" alt="" /></a>
+            </div>
+            <div class="col-6 col-sm-4 col-md text-center">
+              <a href="./exploring.html"><img class="w-100" src="./images/Explore Straenox Button with Label.png" alt="" /></a>
+            </div>
+            <div class="col-6 col-sm-4 col-md text-center">
+              <a href="./roadmap.html"><img class="w-100" src="./images/Road Map Button with label.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-none d-md-block">
+          <div class="row justify-content-center m-0">
+            <div class="col-md-12 col-lg-11">
+              <div class="row">
+                <div class="col text-center">
+                  <a href="./nightBeings.html"><img class="w-100" src="./images/Night Beings Button and Label.png" alt="" /></a>
+                </div>
+                <div class="col text-center">
+                  <a href="./families.html"><img class="w-100" src="./images/Conflicting Families button and Label.png" alt="" /></a>
+                </div>
+                <div class="col text-center">
+                  <a href="./story.html"><img class="w-100" src="./images/About Moongirl button and L1abel.png" alt="" /></a>
+                </div>
+                <div class="col text-center">
+                  <a href="./exploring.html"><img class="w-100" src="./images/Explore Straenox Button with Label.png" alt="" /></a>
+                </div>
+                <div class="col text-center">
+                  <a href="./roadmap.html"><img class="w-100" src="./images/Road Map Button with label.png" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-11 col-lg-10 col-xl-8 col-xxl-7 pb-5">
+            <img class="w-100" src="./images/Text Frame 1.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <img class="w-100" src="./images/Seams.png" alt="" />
+      <div class="container-fluid pb-5">
+        <div class="row justify-content-center pb-5 mb-5">
+          <div class="moongirlAndStar col-11 col-lg-10 col-xl-8 col-xxl-7">
+            <img class="w-100" src="./images/Moongirl and Star in frames.png" alt="" />
+          </div>
+          <div class="text2 col-11 col-lg-10 col-xl-8 col-xxl-7 pb-md-5 mb-md-5">
+            <img class="w-100" src="./images/Text 2.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="button5 position-absolute">
+        <img class="toyMan position-absolute" src="./images/Toy Man.png" alt="" />
+        <a href="#menu">
+          <img class="w-100" src="./images/Return to Menu Button and Label.png" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <script>
+      let beat;
+      let muted = false;
+      let beatUrl = "./music/2a. Music for Menu Page.mp3";
+    </script>
+    <script src="./sound.js"></script>
+    <script>
+      let player = document.getElementById("player"),
+        mov,
+        webm;
+      if (player.canPlayType) {
+        mov = "" !== player.canPlayType('video/mp4; codecs="hvc1"');
+        webm = "" !== player.canPlayType('video/webm; codecs="vp8, vorbis"');
+        if (mov) {
+          player.src = "./images/1.mov";
+          player.type = "video/mp4";
+          player.codecs = "hvc1";
+        } else {
+          if (webm) {
+            player.src = "./images/1.webm";
+            player.type = "video/webm";
+            player.codecs = "vp8, vorbis";
+          } else {
+            alert("browser not supported");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
