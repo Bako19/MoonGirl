@@ -103,6 +103,13 @@
 .nightBeings2 {
     background: url(../images/1.\ Background\ Wallpaper\ -\ for\ loop.png);
     background-size: 100vw;
+    z-index: 9999999999999999999999;
+}
+
+
+.nightBeings3 {
+    background: url(../images/1.\ Background\ Wallpaper\ -\ for\ loop.png);
+    background-size: 100vw;
 }
 
 .seams2 {
@@ -192,7 +199,7 @@
 }
 
 .Answer{
-    z-index: 1000;
+    z-index: 99999999999999999999;
     width: 100%;
     transform: translateX(-50%);
     left: 50%;
@@ -202,7 +209,16 @@
 
 
 
-
+.answerInsta{
+    width: 19%;
+    right: 60%;
+    top: 50%;
+}
+.answerTwitter{
+    width: 19%;
+    right: 25%;
+    top: 50%;
+}
 
 
 
